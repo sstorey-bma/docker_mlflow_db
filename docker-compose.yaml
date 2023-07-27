@@ -31,7 +31,7 @@ services:
             - MGID=$GID
             - POSTGRES_DB=${DB_NAME:-mlflowdb}
             - POSTGRES_USER=${DB_USER:-postgres}
-            - POSTGRES_PASSWORD=${DB_PW:-changethispassword!}
+            - POSTGRES_PASSWORD=${DB_PW}
         volumes:
             - db_datapg:/var/lib/postgresql/data
 
